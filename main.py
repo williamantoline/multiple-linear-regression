@@ -45,7 +45,7 @@ def evaluate_corr_type(corr):
     return typ
 
 def get_strongest_corr(a,b,c):
-    mx = max(a,max(b,c))
+    mx = max(abs(a),max(abs(b),abs(c)))
     if mx == a:
         return "x1"
     elif mx == b:
